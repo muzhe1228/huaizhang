@@ -207,26 +207,8 @@ main {
   text-align: center;
   padding: 0.44rem;
 }
-.intord_title p {
-  font-size: 0.36rem;
-  color: #344;
-  padding-bottom: 0.1rem;
-  position: relative;
-}
-.intord_title p::after {
-  content: " ";
-  position: absolute;
-  width: 1.6rem;
-  bottom: 0;
-  left: 50%;
-  margin-left: -0.8rem;
-  height: 2px;
-  background-color: #ff0000;
-}
-.intord_title h3 {
-  font-size: 0.42rem;
-  color: #000;
-  padding-top: 0.1rem;
+.intord_title img {
+  width: 4.39rem;
 }
 .intord {
   width: 11.41rem;
@@ -249,7 +231,6 @@ main {
   background: url(../images/intord1.png) no-repeat center;
   background-size: contain;
   padding-left: 3.1rem;
-  
 }
 .intord2 {
   background: url(../images/intord2.png) no-repeat center;
@@ -268,7 +249,7 @@ main {
   background-color: #f7f7f7;
 }
 .gameFeature {
-  background: url(../images/newIndex/feature1.png) no-repeat top;
+  background: url(../images/feature1.png) no-repeat top;
   background-size: cover;
   height: 3.2rem;
   position: relative;
@@ -276,8 +257,8 @@ main {
 .feature_size {
   position: absolute;
   right: 1.1rem;
-  top: 0.76rem;
-  width: 5.68rem;
+  top: 0.56rem;
+  width: 5.46rem;
 }
 .Feature_explain {
   width: 12rem;
@@ -288,16 +269,17 @@ main {
 .Feature_explain li {
   width: 3rem;
   height: 2.08rem;
-  background-color: #ddc172;
+  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 0px 6px rgba(0,0,0,.4)
 }
 .Feature_explain li:nth-child(2),
 .Feature_explain li:last-child {
   width: 3rem;
   height: 2.08rem;
-  background-color: #fa0000;
+  background-color: #f5f5f5;
 }
 .Feature_explain li img {
   width: 1.02rem;
@@ -326,39 +308,63 @@ main {
 .blockCompetition {
   width: 13.66rem;
   margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.block_title {
+  text-align: center;
+  padding-bottom: 0.44rem;
+}
+.block_title img {
+  width: 3.73rem;
 }
 .canpin {
   padding-bottom: 0.44rem;
+  position: relative;
+  width: 24%;
+  height: 3.6rem;
+  border-radius: 0.08rem;
   overflow: hidden;
+  border: 3px solid #f4f4f4;
+  cursor: pointer;
+  transition: all  0.4s linear;
+  margin-bottom: 0.2rem;
 }
-.canpin li:nth-child(1) {
-  width: 49%;
-  float: left;
+.canpin:hover{
+  transform: translate(-3px,-3px);
+  -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+  -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
 }
-.canpin li:nth-child(2) {
-  width: 49%;
-  float: right;
+.canpin:hover .canpin_intord{
+  opacity: 1;
 }
-.canpin:nth-child(odd) li:nth-child(1) {
-  width: 49%;
-  float: right;
-}
-.canpin:nth-child(odd) li:nth-child(2) {
-  width: 49%;
-  float: left;
-}
-
 .canpin li img {
   width: 100%;
-  height: 3.2rem;
+  height: 3rem;
 }
 .canpin .canpin_title {
-  font-size: 0.36rem;
-  padding-bottom: 0.2rem;
+  font-size: 0.28rem;
+ line-height: 0.5rem;
+  text-align: center;
 }
 .canpin .canpin_intord {
-  font-size: 0.18rem;
-  line-height: 1.8;
+  opacity: 0;
+  transition: all  0.4s linear;
+  position: absolute;
+  padding: 0.2rem;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0,0.4);
+  font-size: 0.2rem;
+  line-height: 1.5;
+  color:#fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 /*************************** Agent 代理合作 **********************************/
@@ -642,11 +648,11 @@ footer {
     bottom: 55%;
   }
   .intord_title img {
-    width: 7.17rem;
+    width: 6.58rem;
   }
   .intord {
     width: 11.66rem;
-    padding: 40px;
+    padding: 0.8rem 0.8rem 1.6rem 0.8rem;
     align-items: flex-end;
   }
   .intordSize {
@@ -656,26 +662,22 @@ footer {
     font-size: 0.36rem;
     line-height: 1.8;
   }
-  .intord_nn {
-    height: 10.04rem;
-    background: url(../images/newIndex/mbg_hxnn.png) no-repeat center;
-    background-size: contain;
-  }
-  .intord_jc {
-    height: 9.07rem;
-    background: url(../images/newIndex/mbg_hxjc.png) no-repeat center;
-    background-size: contain;
-  }
-  .intord_db {
+  .intord1 {
     height: 10.55rem;
-    background: url(../images/newIndex/mbg_yydb.png) no-repeat center;
+    background: url(../images/intordm_1.png) no-repeat center;
     background-size: contain;
   }
+  .intord2 {
+    height: 10.55rem;
+    background: url(../images/intordm_2.png) no-repeat center;
+    background-size: contain;
+  }
+
   /*************************** Feature 游戏特色部分 **********************************/
   .feature_size {
     left: 50%;
     top: 0.4rem;
-    width: 8.5rem;
+    width: 8.2rem;
     transform: translateX(-50%);
   }
   .gameFeature {
@@ -694,7 +696,6 @@ footer {
   .Feature_explain li {
     width: 12rem;
     height: 3.2rem;
-    background-color: #ddc172;
     margin-bottom: 0.4rem;
     padding: 0 0.6rem;
     justify-content: flex-start;
@@ -722,54 +723,36 @@ footer {
   #blockCompetition {
     padding: 0.4rem 0;
   }
+  .blockCompetition {
+    padding: 1%;
+  }
   .block_title {
     padding-bottom: 0.44rem;
   }
   .block_title img {
-    width: 7.125rem;
+    width: 5.6rem;
   }
-  .whatBlock,
-  .blockWhat {
-    width: 12.8rem;
-    min-height: 3.14rem;
-    display: flex;
-    align-items: center;
-    padding: 0.24rem;
+  .canpin {
+    width: 49%;
+    height: 6rem;
   }
-  .blockWhat {
-    flex-direction: row-reverse;
+  .canpin:hover{
+    transform: translate(0,-3px);
+    -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
   }
-  .BlockImg1 {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 3.4rem;
+  .canpin li img {
+    width: 100%;
+    height: 4.8rem;
   }
-  .BlockImg2 {
-    position: relative;
-    right: 0;
-    bottom: 0;
-    width: 3.4rem;
+  .canpin .canpin_title {
+    font-size: 0.28rem;
+    padding-bottom: 0.2rem
   }
-  .blockSize {
-    margin-right: 0;
-    padding: 0.3rem 0.36rem 0 0.36rem;
-    flex: 1;
-  }
-  .whatSize {
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .whatSize p {
-    text-indent: 0.68rem;
-  }
-  .blockSize h2 {
-    font-size: 0.48rem;
-  }
-
-  .blockSize p {
-    font-size: 0.36rem;
-    line-height: 0.72rem;
+  .canpin .canpin_intord {
+    font-size: 0.16rem;
+    line-height: 1.5;
   }
   /*************************** Agent 代理合作 **********************************/
   #gameAgent {
