@@ -155,18 +155,6 @@ main {
 .banner .banSize li img {
   width: 100%;
 }
-/* .q_code {
-  width: 1.78rem;
-  height: 1.78rem;
-  position: absolute;
-  right: 0.8rem;
-  top: 1.72rem;
-}
-.q_code img {
-  width: 100%;
-  height: 100%;
-  pointer-events: auto;
-} */
 .banner_right img {
   position: absolute;
   bottom: 0;
@@ -225,7 +213,6 @@ main {
 .intord .intordSize p {
   font-size: 0.16rem;
   line-height: 0.32rem;
-  color: #000;
 }
 .intord1 {
   background: url(../images/intord1.png) no-repeat center;
@@ -375,12 +362,6 @@ main {
   min-height: 7.26rem;
   padding-bottom: 0.8rem;
 }
-.agentBg {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 2.33rem;
-}
 .gameAgent {
   width: 13.66rem;
   margin: auto;
@@ -390,34 +371,25 @@ main {
   padding: 0.46rem 0;
 }
 .agent_title img {
-  width: 3.83rem;
+  width: 2.16rem;
 }
-.agentList {
-  padding: 0 1.16rem;
+.about_info{
+  padding: 0 0.4rem;
   display: flex;
+  justify-content: space-between;
 }
-.agent_l ul {
-  display: flex;
+.leftImg{
+  width: 48%;
+  height: 4rem;
+}
+.right_intord{
+  width: 48%;
+}
+.right_intord li{
   margin-bottom: 0.2rem;
-}
-.agent_l {
-  width: 50%;
-}
-.agent_l img {
-  margin-right: 0.16rem;
-  width: 0.48rem;
-}
-.agent_l p {
-  font-size: 0.16rem;
-  line-height: 0.36rem;
-  color: #666;
-}
-.agent_l p span {
-  font-size: 0.16rem;
-}
-.agent_l h3 {
-  font-size: 0.24rem;
-  line-height: 0.48rem;
+  font-size: 0.20rem;
+  line-height: 1.8;
+  text-indent: 0.48rem
 }
 
 /*************************** contactUs 联系我们 **********************************/
@@ -512,7 +484,7 @@ footer {
   line-height: 1rem;
 }
 .footer_logo img {
-  width: 1.9rem;
+  width: 1.98rem;
 }
 .footer_l a,
 .footer_group p {
@@ -759,32 +731,18 @@ footer {
     padding-bottom: 0.8rem;
   }
   .agent_title img {
-    width: 5.75rem;
+    width: 3.24rem;
   }
-  .agentList {
-    padding: 0 1.16rem;
-    flex-direction: column;
+  .about_info{
+
+    flex-wrap: wrap;
   }
-  .agent_l ul {
-    margin-bottom: 0.4rem;
-  }
-  .agent_l {
+  .leftImg{
     width: 100%;
+    margin-bottom: 0.2rem;
   }
-  .agent_l img {
-    margin-right: 0.32rem;
-    width: 0.72rem;
-  }
-  .agent_l p {
-    font-size: 0.36rem;
-    line-height: 0.72rem;
-  }
-  .agent_l p span {
-    font-size: 0.36rem;
-  }
-  .agent_l h3 {
-    font-size: 0.48rem;
-    line-height: 0.96rem;
+  .right_intord{
+    width:100%;
   }
   /*************************** contactUs 联系我们 **********************************/
   .us_title {
@@ -843,7 +801,7 @@ footer {
     line-height: 1rem;
   }
   .footer_logo img {
-    width: 2.85rem;
+    width: 3.6rem;
   }
   .footer_l a,
   .footer_group p {
