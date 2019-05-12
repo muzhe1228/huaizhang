@@ -11,6 +11,24 @@ $(function () {
     },
     500
   );
+  $('.showBuyBtn,.bannerBuyBtn,.mBannerBuyBtn,.footerBuyBtn').click(function () {
+    $('.from_shade').fadeIn(300)
+  })
+  $('.from_shade').click(function () {
+    $(this).fadeOut(300)
+  })
+  $('.from').click(function () {
+    return false
+  })
+  $('.submitBtn').click(function () {
+    var subData = {
+      name: $('#name').val(),
+      phone: $('#phone').val(),
+      catType: $('#catType').val(),
+      money: $('#money').val(),
+    }
+    console.log(subData)
+  })
   setNavLineHeight(0);
   resetHeight();
   var unslider = $(".banner").unslider({
